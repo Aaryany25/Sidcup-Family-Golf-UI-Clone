@@ -1,0 +1,382 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  position: relative;
+}
+#nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* background-color: black; */
+  padding: 2vw 8vw;
+  gap: 50px;
+  position: fixed;
+  z-index: 99;
+}
+#nav img {
+  height: 5vw;
+  padding-left: 4vw 0;
+}
+#nav h4 {
+  color: white;
+  text-transform: uppercase;
+}
+#herovideo {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  position: fixed;
+  z-index: -1;
+}
+#heroimg {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  position: fixed;
+  z-index: -1;
+}
+#crsr {
+  height: 20px;
+  width: 20px;
+  background-color: #95c11e;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+}
+#crsrbl {
+  height: 400px;
+  width: 400px;
+  background-color: #96c11e7b;
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(50px);
+  z-index: 9;
+}
+#main {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#page1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+}
+#page1 h1 {
+  font-size: 140px;
+  font-weight: 900;
+  position: relative;
+}
+#page1 h1:before {
+  content: "EAT. DRINK. PLAY.";
+  position: absolute;
+  color: black;
+  top: -6px;
+  left: -6px;
+  -webkit-text-stroke: 2px #95c11e;
+  z-index: -1;
+}
+#page1 h2 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 800;
+}
+#page1 p {
+  font-size: 15px;
+  font-weight: 500;
+  width: 50%;
+  margin-top: 15px;
+}
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  z-index: 10;
+}
+/* *******************************SCROLLER******************************************* */
+#scroller {
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+}
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+#scroller-in {
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#scroller h4 {
+  display: inline-block;
+  font-size: 9vw;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all linear 0.5s;
+  margin-right: 15px;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+}
+#scroller h4:hover {
+  color: #95c11e;
+  -webkit-text-stroke: 2px #95c11e;
+}
+@keyframes scroll {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+/* ****************************About Page ******************** */
+#About-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8vw 8vw;
+}
+#Aboutus {
+  /* background-color: red; */
+}
+#img2 {
+  height: 17vw;
+  width: 13vw;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-left: 2vw;
+  margin-top: 5vw;
+}
+#img1 {
+  height: 15vw;
+  width: 15vw;
+  border-radius: 10%;
+  margin-top: 4vw;
+  margin-right: 2vw;
+}
+#Aboutus h2 {
+  text-align: center;
+  font-size: 3vw;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-transform: uppercase;
+
+  /* background-color: red; */
+}
+#About-page h4 {
+  text-align: center;
+  font-size: 1vw;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+
+  padding: 3.5vw 4vw;
+  line-height: 2.15vw;
+  /* background-color: yellow; */
+}
+/*********************************Card Container************************/
+
+#cards-container {
+  /* background-color: red; */
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1;
+}
+.cards {
+  /* background-color: black; */
+  width: 25%;
+  height: 70vh;
+  margin: 1.5vw;
+  border-radius: 5%;
+  background-size: cover;
+  background-position: center;
+  transition: all ease 0.6;
+}
+#card1 {
+  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer.jpg?strip=all&lossy=1&sharp=1&w=1152&ssl=1);
+}
+#card2 {
+  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+#card3 {
+  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&w=1152&ssl=1);
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #95c11e;
+  border-radius: 5%;
+  padding: 50px;
+  padding-top: 160px;
+  opacity: 0;
+  
+
+  transition: all ease 0.6s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlay h2 {
+  color: black;
+  font-size: 2.5vw;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.overlay p {
+  color: black;
+  margin-top: 2vw;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* ***********************************************Page3 ***********************/
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+
+  align-items: center;
+  background-color:black;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+}
+/**************************Sign Up*********************************/
+#greendiv{
+    margin-top: 5vw;
+    width: 100%;
+    height: 20vw;
+    background: linear-gradient( to left bottom ,#1e8a05,#ace022);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#greendiv img{
+    width: 13%;
+    height: 20vw;
+    object-fit: cover;
+}
+#signupbox{
+    padding-top: 2.5vw;
+    /* background-color: red; */
+}
+#signupbox h2{
+    color: black;
+    font-size: 2vw;
+    padding: 0.7vw;
+    align-content: center;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+/********************************Food ***************************************/
+#fooddiv{
+    width: 100%;
+    height: 50vw;
+    /* background-color: red; */
+    margin-top: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#left{
+    width: 40%;
+    height: 60%;
+    /* background-color: yellow; */
+    margin-left: 5vw;
+}
+#left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+
+}
+#right{
+    width: 40%;
+    height: 60%;
+    /* background-color: blue; */
+    text-align: start;
+    margin-right: 3vw;
+    padding-top: 4vw;
+}
+#right h2{
+    font-size: 4vw;
+    font-weight: 900;
+}
+#right p{
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 2vw;
+}
+#btn{
+    text-decoration: none;
+    font-size: 1.5vw;
+ margin-top: 2vh;
+ /* background-color: red; */
+ border:solid 2px #95c11e;
+ border-radius: 35px;
+ padding: 15px;
+}
+/*****************************************Image Corousal**************/
+#image-container{
+  width: 100%;
+  height: 25vw;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.imgscroller{
+  width: 100%;
+  height: 70%;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  
+}
+
+.imgcards{
+  
+  width: 20%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 25px;
+  margin: 0 3vw;
+}
