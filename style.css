@@ -32,6 +32,7 @@ body {
 #nav h4 {
   color: white;
   text-transform: uppercase;
+  z-index: -1;
 }
 #herovideo {
   height: 100%;
@@ -62,7 +63,7 @@ body {
   border-radius: 50%;
   position: fixed;
   filter: blur(50px);
-  z-index: 9;
+  z-index: 10;
 }
 #main {
   position: relative;
@@ -233,14 +234,14 @@ body {
   background-color: #95c11e;
   border-radius: 5%;
   padding: 50px;
-  padding-top: 160px;
-  opacity: 0;
+  padding-top: 120px;
+  opacity: 1;
   
 
   transition: all ease 0.6s;
 }
 .overlay:hover{
-    opacity: 1;
+    opacity:
 }
 .overlay h2 {
   color: black;
@@ -379,4 +380,56 @@ body {
   background-color: rgb(0, 0, 0);
   border-radius: 25px;
   margin: 0 3vw;
+}
+/**************************Feedback ***********************/
+#feedback{
+  width: 100%;
+  height: 40vw;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#feedback p{
+  /* padding-top: 10vw; */
+  /* margin-left: 20vw; */
+  font-size: 2.5vw;
+  font-weight: 700;
+  width: 60%;
+ text-align: center;
+ /* background-color: red; */
+}
+#feedback img{
+  width: 6vw;
+  height: 3vw;
+  position: absolute;
+}
+#colon1{
+  top:10vw;
+  left: 10vw;
+}
+#colon2{
+  bottom: 10vw;
+  right: 10vw;
+}
+/*************************************Footer***********************************/
+#footer{
+  width: 100%;
+  height: 20vw;
+  background-color: #95c11e;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+#footer div{
+  /* background-color: red; */
+  width: 25%;
+  height: 80%;
+  margin: 0 2vw;
+}
+#footerimg{
+  width: 20%;
+  height: 20%;
 }
